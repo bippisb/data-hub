@@ -1,0 +1,30 @@
+# Site settings
+title: BIPP Data Hub
+description: A comprehensive collection of high-value datasets for research purposes
+baseurl: "/"
+url: "https://bippisb.github.io"
+
+# Build settings
+markdown: kramdown
+plugins:
+  - jekyll-feed
+  - jekyll-seo-tag
+
+# Exclude from processing
+exclude:
+  - Gemfile
+  - Gemfile.lock
+  - node_modules
+  - vendor/bundle/
+  - vendor/cache/
+  - vendor/gems/
+  - vendor/ruby/
+  - .gitignore
+  - README.md
+
+# Custom variables
+maintainer:
+  name: Gursharan Singh Dhanjal
+  title: Principal Data Scientist
+  organization: Bharti Institute of Public Policy, ISB
+  email: gursharan_singh@isb.edu

@@ -1,0 +1,30 @@
+{
+  "sectors": [
+    "Banking",
+    "Climate and Weather",
+    "Commerce",
+    "Economy",
+    "Education",
+    "Energy",
+    "Financial Inclusion",
+    "Food and Agriculture",
+    "Government Schemes",
+    "Rural Development",
+    "Socio Economic",
+    "Transportation"
+  ],
+  "granularities": [
+    "Country",
+    "District",
+    "Gram Panchayat",
+    "Market Center",
+    "Point",
+    "Power Station",
+    "Regional Transport Office",
+    "Road",
+    "SHG",
+    "State",
+    "Station",
+    "Village"
+  ]
+}
