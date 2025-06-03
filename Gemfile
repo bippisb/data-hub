@@ -8,9 +8,6 @@ gem "base64", "~> 0.1"
 gem "bigdecimal", "~> 3.1"
 gem "webrick", "~> 1.9"
 
-# Use GitHub Pages gem
-gem "github-pages", group: :jekyll_plugins
-
 # Windows and JRuby does not include zoneinfo files, so bundle the tzinfo-data gem
 platforms :mingw, :x64_mingw, :mswin, :jruby do
   gem "tzinfo", ">= 1", "< 3"
