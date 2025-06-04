@@ -25,6 +25,7 @@ exclude:
 # Custom variables
 maintainer:
   name: Gursharan Singh Dhanjal
+  team: Data Hub Team
   title: Principal Data Scientist
   organization: Bharti Institute of Public Policy, ISB
   email: gursharan_singh@isb.edu

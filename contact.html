@@ -14,17 +14,72 @@ title: Contact
       <p class="mb-0">Please provide detailed information about your research objectives and how you plan to use the requested datasets. This helps us ensure responsible data use and provide you with the most relevant resources.</p>
     </div>
     
-    <div class="contact-form-container">
-      <iframe width="640px" height="640px" src="https://forms.cloud.microsoft/Pages/ResponsePage.aspx?id=Q-TapKs4SkCzMZ0dM3_PN270gzHaN65Jq41AJQWicCVUMEZFSEZHQUtYUFNBODRCREEwMUNHWEg5Uy4u&embed=true" ></iframe>
+    <!-- Microsoft Forms Embed - Using the original long URL format -->
+    <div class="card">
+      <div class="card-body p-0">
+        <iframe width="100%" height="1200px" src="https://forms.cloud.microsoft/Pages/ResponsePage.aspx?id=Q-TapKs4SkCzMZ0dM3_PN270gzHaN65Jq41AJQWicCVUNkVKRlA0MlNYSDI0NEZTTjQwR0M2WVJGWS4u&embed=true" frameborder="0" marginwidth="0" marginheight="0" style="border: none; max-width:100%; max-height:100vh" allowfullscreen webkitallowfullscreen mozallowfullscreen msallowfullscreen> </iframe>
+      </div>
     </div>
     
-    <div class="mt-4">
-      <h3>Alternative Contact Methods</h3>
-      <p>If you experience any issues with the form above, you can also reach us at:</p>
-      <ul>
-        <li>Email: <a href="mailto:{{ site.maintainer.email }}">{{ site.maintainer.email }}</a></li>
-        <li>Please include "Dataset Access Request" in your email subject line</li>
-      </ul>
+    <!-- Alternative access methods -->
+    <div class="card mt-4">
+      <div class="card-body">
+        <h3>Having trouble viewing the form above?</h3>
+        <p>If the form above is not displaying properly, you have these options:</p>
+        
+        <div class="row">
+          <div class="col-md-6">
+            <h5><i class="fas fa-external-link-alt mr-2"></i>Option 1: Direct Link</h5>
+            <p>Open the form in a new window:</p>
+            <a href="https://forms.office.com/Pages/ResponsePage.aspx?id=Q-TapKs4SkCzMZ0dM3_PN270gzHaN65Jq41AJQWicCVUMEZFSEZHQUtYUFNBODRCREEwMUNHWEg5Uy4u" 
+               target="_blank" 
+               rel="noopener noreferrer" 
+               class="btn btn-primary btn-sm">
+              <i class="fas fa-external-link-alt mr-1"></i>
+              Open Form in New Tab
+            </a>
+          </div>
+          
+          <div class="col-md-6">
+            <h5><i class="fas fa-envelope mr-2"></i>Option 2: Email</h5>
+            <p>Send your request directly via email:</p>
+            <address>
+              <a href="javascript:void(0)" 
+                 onclick="this.href='mailto:' + ['gursharan_singh','@','isb.edu'].join('') + '?subject=Dataset%20Access%20Request'"
+                 class="btn btn-outline-primary btn-sm">
+                <i class="fas fa-envelope mr-1"></i>
+                Send Email Request
+              </a><br>
+              <small class="text-muted mt-2 d-block">
+                gursharan<span style="display:none">NOSPAM</span>_singh [at] isb [dot] edu
+              </small>
+            </address>
+
+            <h5>Information to Include in Your Request:</h5>
+              <ul>
+                <li>Your name and institutional affiliation</li>
+                <li>Dataset(s) you wish to access</li>
+                <li>Research purpose and objectives</li>
+                <li>Expected timeline for data use</li>
+                <li>Any specific data formats or subsets needed</li>
+              </ul>
+              
+            </div>
+        </div>
+        
+        <hr>
+        
+        
+      </div>
     </div>
   </div>
 </div>
+
+<style>
+/* Ensure iframe container is responsive */
+@media (max-width: 768px) {
+  iframe {
+    height: 600px !important;
+  }
+}
+</style>
