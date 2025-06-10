@@ -15,15 +15,16 @@
   ],
   "granularities": [
     "Country",
-    "District",
     "Gram Panchayat",
     "Market Center",
-    "Point",
+    "Outlets",
+    "Point of Sale",
+    "Port",
     "Power Station",
     "Regional Transport Office",
     "Road",
     "SHG",
-    "State",
+    "School",
     "Station",
     "Village"
   ]
