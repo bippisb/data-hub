@@ -15,7 +15,7 @@
     "resource_id": "a83bd1ad-ba46-41c7-9a80-c75537ce1172"
   },
   {
-    "name": "Bank Outlets and ATM's",
+    "name": "Bank Outlets and ATM",
     "source": "Reserve Bank of India",
     "sectors": [
       "Banking",
@@ -27,7 +27,7 @@
     "frequency": "Other",
     "data_retrieval_date": "01-12-2023",
     "years_covered": "1900-2023",
-    "package_name": "Bank Outlets and ATM's",
+    "package_name": "Bank Outlets and ATM",
     "package_id": "77c3e42d-bb12-4e5e-ad53-16b6805c6cf5",
     "resource_id": "61702231-d96b-4f3b-bc26-f1938cf6438e"
   },
