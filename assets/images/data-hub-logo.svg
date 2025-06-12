@@ -1,20 +1,25 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <svg width="32" height="32" viewBox="0 0 32 32" fill="none" xmlns="http://www.w3.org/2000/svg">
-  <!-- Outer circle representing the hub -->
-  <circle cx="16" cy="16" r="14" stroke="#158CBA" stroke-width="2" fill="none"/>
+  <!-- Person 1 (left) -->
+  <circle cx="6" cy="10" r="3" fill="none" stroke="#158CBA" stroke-width="2"/>
+  <path d="M2 20C2 20 2 17 6 17C10 17 10 20 10 20V22H2V20Z" fill="none" stroke="#158CBA" stroke-width="2"/>
   
-  <!-- Center hub -->
-  <circle cx="16" cy="16" r="4" fill="#158CBA"/>
+  <!-- Dataset stack in center (no overlap) -->
+  <rect x="13" y="10" width="6" height="2" rx="0.5" fill="#158CBA"/>
+  <rect x="13" y="13" width="6" height="2" rx="0.5" fill="#158CBA"/>
+  <rect x="13" y="16" width="6" height="2" rx="0.5" fill="#158CBA"/>
   
-  <!-- Data nodes -->
-  <circle cx="16" cy="6" r="3" fill="#28A745"/>
-  <circle cx="26" cy="16" r="3" fill="#FFC107"/>
-  <circle cx="16" cy="26" r="3" fill="#DC3545"/>
-  <circle cx="6" cy="16" r="3" fill="#17A2B8"/>
+  <!-- Star on dataset -->
+  <circle cx="18" cy="11" r="1" fill="#FFC107"/>
   
-  <!-- Connecting lines -->
-  <line x1="16" y1="10" x2="16" y2="12" stroke="#158CBA" stroke-width="2"/>
-  <line x1="22" y1="16" x2="20" y2="16" stroke="#158CBA" stroke-width="2"/>
-  <line x1="16" y1="22" x2="16" y2="20" stroke="#158CBA" stroke-width="2"/>
-  <line x1="10" y1="16" x2="12" y2="16" stroke="#158CBA" stroke-width="2"/>
+  <!-- Person 2 (right) -->
+  <circle cx="26" cy="10" r="3" fill="none" stroke="#158CBA" stroke-width="2"/>
+  <path d="M22 20C22 20 22 17 26 17C30 17 30 20 30 20V22H22V20Z" fill="none" stroke="#158CBA" stroke-width="2"/>
+  
+  <!-- Simple arrows pointing to center -->
+  <path d="M10 14H12" stroke="#6C757D" stroke-width="1.5" stroke-linecap="round"/>
+  <path d="M11 13L12 14L11 15" stroke="#6C757D" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+  
+  <path d="M22 14H20" stroke="#6C757D" stroke-width="1.5" stroke-linecap="round"/>
+  <path d="M21 13L20 14L21 15" stroke="#6C757D" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
 </svg>
