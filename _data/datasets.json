@@ -92,6 +92,21 @@
     "resource_id": "a873702e-dc4a-4fa5-8223-924ebeeb6851"
   },
   {
+    "name": "Exports and Imports (Port-level)",
+    "source": "Directorate General of Commercial Intelligence and Statistics",
+    "sectors": [
+      "Commerce"
+    ],
+    "description": "The Port Level Import-Export Dataset provides comprehensive monthly data on imports and exports at the principal commodity level, recorded across various ports in India. It includes detailed information on volume, value (in USD and INR), and commodity types, categorized at the 2-digit HS code level. This dataset is a crucial resource for analyzing trade patterns, regional trade performance, and economic activity. It is particularly valuable for economists, policymakers, trade analysts, and researchers studying international trade, economic development, and market trends. \r\n \r\n| Variable Name          | Variable Description                  | Variable Type | SubDataSet       |\r\n|------------------------|---------------------------------------|---------------|------------------|\r\n| month                  | Month                                 | DATE          |                  |\r\n| trade_type             | Trade Type                            | TEXT          | Import, Export   |\r\n| state_name             | State Name                            | TEXT          |                  |\r\n| state_code             | State Code                            | TEXT          |                  |\r\n| port                   | Port for Import                       | TEXT          |                  |\r\n| country                | Import Country                        | TEXT          |                  |\r\n| pc_code                | Principle Commodity Code              | TEXT          |                  |\r\n| commodity              | Commodity Name                        | TEXT          |                  |\r\n| units                  | Quantity Unit Measurement             | TEXT          |                  |\r\n| quantity               | Value of commodity quantity           | NUMERIC       |                  |\r\n| dollars_value          | Value of commodity quantity in USD    | NUMERIC       |                  |\r\n| inr_value              | Value of commodity quantity in INR    | NUMERIC       |                  |\r\n",
+    "granularity": "Port",
+    "frequency": "Monthly",
+    "data_retrieval_date": "16-09-2024",
+    "years_covered": "2018-2024",
+    "package_name": "Exports and Imports (Port-level)",
+    "package_id": "81a12d68-e5b8-4bf3-a980-1693eaeb653f",
+    "resource_id": "ed90878b-bce5-4eff-8a1e-fd4557c96aef"
+  },
+  {
     "name": "Groundwater Level Manual and Telemetric",
     "source": "India Water Resources Information System",
     "sectors": [
@@ -135,21 +150,6 @@
     "package_name": "Mission Antyodaya 2020",
     "package_id": "56a40288-837b-4b7c-9b37-5316f9528580",
     "resource_id": "d5bce848-31b1-41dc-ac71-5a0fc8734ea6"
-  },
-  {
-    "name": "Exports and Imports (Port-level)",
-    "source": "Directorate General of Commercial Intelligence and Statistics",
-    "sectors": [
-      "Commerce"
-    ],
-    "description": "The Port Level Import-Export Dataset provides comprehensive monthly data on imports and exports at the principal commodity level, recorded across various ports in India. It includes detailed information on volume, value (in USD and INR), and commodity types, categorized at the 2-digit HS code level. This dataset is a crucial resource for analyzing trade patterns, regional trade performance, and economic activity. It is particularly valuable for economists, policymakers, trade analysts, and researchers studying international trade, economic development, and market trends. \r\n \r\n| Variable Name          | Variable Description                  | Variable Type | SubDataSet       |\r\n|------------------------|---------------------------------------|---------------|------------------|\r\n| month                  | Month                                 | DATE          |                  |\r\n| trade_type             | Trade Type                            | TEXT          | Import, Export   |\r\n| state_name             | State Name                            | TEXT          |                  |\r\n| state_code             | State Code                            | TEXT          |                  |\r\n| port                   | Port for Import                       | TEXT          |                  |\r\n| country                | Import Country                        | TEXT          |                  |\r\n| pc_code                | Principle Commodity Code              | TEXT          |                  |\r\n| commodity              | Commodity Name                        | TEXT          |                  |\r\n| units                  | Quantity Unit Measurement             | TEXT          |                  |\r\n| quantity               | Value of commodity quantity           | NUMERIC       |                  |\r\n| dollars_value          | Value of commodity quantity in USD    | NUMERIC       |                  |\r\n| inr_value              | Value of commodity quantity in INR    | NUMERIC       |                  |\r\n",
-    "granularity": "Port",
-    "frequency": "Monthly",
-    "data_retrieval_date": "16-09-2024",
-    "years_covered": "2018-2024",
-    "package_name": "Exports and Imports (Port-level)",
-    "package_id": "81a12d68-e5b8-4bf3-a980-1693eaeb653f",
-    "resource_id": "ed90878b-bce5-4eff-8a1e-fd4557c96aef"
   },
   {
     "name": "Pradhan Mantri Awaas Yojana - Gramin",
