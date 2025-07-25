@@ -26,7 +26,7 @@
     "granularity": "Outlets",
     "frequency": "Other",
     "data_retrieval_date": "01-12-2023",
-    "years_covered": "1900-2023",
+    "years_covered": "Cross-section",
     "package_name": "Bank Outlets and ATM",
     "package_id": "77c3e42d-bb12-4e5e-ad53-16b6805c6cf5",
     "resource_id": "61702231-d96b-4f3b-bc26-f1938cf6438e"
@@ -97,7 +97,7 @@
     "sectors": [
       "Commerce"
     ],
-    "description": "The Port Level Import-Export Dataset provides comprehensive monthly data on imports and exports at the principal commodity level, recorded across various ports in India. It includes detailed information on volume, value (in USD and INR), and commodity types, categorized at the 2-digit HS code level. This dataset is a crucial resource for analyzing trade patterns, regional trade performance, and economic activity. It is particularly valuable for economists, policymakers, trade analysts, and researchers studying international trade, economic development, and market trends. \r\n \r\n| Variable Name          | Variable Description                  | Variable Type | SubDataSet       |\r\n|------------------------|---------------------------------------|---------------|------------------|\r\n| month                  | Month                                 | DATE          |                  |\r\n| trade_type             | Trade Type                            | TEXT          | Import, Export   |\r\n| state_name             | State Name                            | TEXT          |                  |\r\n| state_code             | State Code                            | TEXT          |                  |\r\n| port                   | Port for Import                       | TEXT          |                  |\r\n| country                | Import Country                        | TEXT          |                  |\r\n| pc_code                | Principle Commodity Code              | TEXT          |                  |\r\n| commodity              | Commodity Name                        | TEXT          |                  |\r\n| units                  | Quantity Unit Measurement             | TEXT          |                  |\r\n| quantity               | Value of commodity quantity           | NUMERIC       |                  |\r\n| dollars_value          | Value of commodity quantity in USD    | NUMERIC       |                  |\r\n| inr_value              | Value of commodity quantity in INR    | NUMERIC       |                  |\r\n",
+    "description": "The Port Level Import-Export Dataset provides comprehensive monthly data on imports and exports at the principal commodity level, recorded across various ports in India. It includes detailed information on volume, value (in USD and INR), and commodity types, categorized at the 2-digit HS code level. This dataset is a crucial resource for analyzing trade patterns, regional trade performance, and economic activity. It is particularly valuable for economists, policymakers, trade analysts, and researchers studying international trade, economic development, and market trends. \r\n \r\n| Variable Name          | Variable Description                  | Variable Type | Unit Of Measurement       |\r\n|------------------------|---------------------------------------|---------------|------------------|\r\n| month                  | Month                                 | DATE          |                  |\r\n| trade_type             | Trade Type                            | TEXT          |                  |\r\n| state_name             | State Name                            | TEXT          |                  |\r\n| state_code             | State Code                            | TEXT          |                  |\r\n| port                   | Port for Import                       | TEXT          |                  |\r\n| country                | Import Country                        | TEXT          |                  |\r\n| pc_code                | Principle Commodity Code              | TEXT          |                  |\r\n| commodity              | Commodity Name                        | TEXT          |                  |\r\n| units                  | Quantity Unit Measurement             | TEXT          |                  |\r\n| quantity               | Value of commodity quantity           | NUMERIC       |                  |\r\n| dollars_value          | Value of commodity quantity in USD    | NUMERIC       |                  |\r\n| inr_value              | Value of commodity quantity in INR    | NUMERIC       |                  |\r\n",
     "granularity": "Port",
     "frequency": "Monthly",
     "data_retrieval_date": "16-09-2024",
@@ -107,7 +107,7 @@
     "resource_id": "ed90878b-bce5-4eff-8a1e-fd4557c96aef"
   },
   {
-    "name": "Groundwater Level Manual and Telemetric",
+    "name": "Groundwater Level",
     "source": "India Water Resources Information System",
     "sectors": [
       "Climate and Weather"
@@ -193,7 +193,7 @@
     "granularity": "SHG",
     "frequency": "Other",
     "data_retrieval_date": "18-08-2024",
-    "years_covered": "",
+    "years_covered": "Cross-section",
     "package_name": "SHG Financial and Member Profile Details",
     "package_id": "4241bc8e-171e-4406-9d5a-fd2b950ff0db",
     "resource_id": "796bbee7-9743-49c6-bb1d-d460c475786d"
@@ -208,7 +208,7 @@
     "granularity": "School",
     "frequency": "Biannually",
     "data_retrieval_date": "2022-01-12 00:00:00",
-    "years_covered": "1701-2021",
+    "years_covered": "Cross-section",
     "package_name": "UDISE",
     "package_id": "9382a328-bcea-4f1e-924e-954977d48ded",
     "resource_id": "6cf17e5a-6136-437d-bcd0-1dab481955ef"
