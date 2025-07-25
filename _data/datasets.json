@@ -1,6 +1,6 @@
 [
   {
-    "name": "Agriculture Marketing",
+    "name": "APMC arrivals and prices (Agmarknet)",
     "source": "Ministry of Agriculture & Farmers Welfare",
     "sectors": [
       "Food and Agriculture"
@@ -10,7 +10,7 @@
     "frequency": "Daily",
     "data_retrieval_date": "30-04-2025",
     "years_covered": "2019-2025",
-    "package_name": "APMC arrivals and prices",
+    "package_name": "Agriculture Marketing",
     "package_id": "a6555be1-970b-4bdd-bc0a-28695c233e67",
     "resource_id": "a83bd1ad-ba46-41c7-9a80-c75537ce1172"
   },
