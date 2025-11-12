@@ -1,13 +1,66 @@
 /* Custom styles for High-Value Datasets - Litera Theme */
+/* ================================
+   INTER FONT CONFIGURATION
+   ================================ */
+
+/* Root Variables for Font */
+:root {
+  --font-primary: 'Inter', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, 'Helvetica Neue', Arial, sans-serif;
+  --font-weight-light: 300;
+  --font-weight-normal: 400;
+  --font-weight-medium: 500;
+  --font-weight-semibold: 600;
+  --font-weight-bold: 700;
+}
+
+/* Apply Inter to all elements */
+* {
+  font-family: var(--font-primary);
+}
+
 
 body {
   min-height: 100vh;
   display: flex;
   flex-direction: column;
+  font-family: var(--font-primary);
+  font-optical-sizing: auto;
+  font-weight: var(--font-weight-normal);
+  font-style: normal;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
 }
 
 main {
   flex: 1;
+}
+
+/* Headings with Inter */
+h1, h2, h3, h4, h5, h6,
+.h1, .h2, .h3, .h4, .h5, .h6 {
+  font-family: var(--font-primary);
+  font-optical-sizing: auto;
+}
+
+/* Buttons and inputs */
+button, input, select, textarea,
+.btn, .form-control, .form-select {
+  font-family: var(--font-primary);
+}
+
+/* Navigation */
+.navbar, .navbar-brand, .nav-link {
+  font-family: var(--font-primary);
+}
+
+/* Cards and content */
+.card, .card-title, .card-text {
+  font-family: var(--font-primary);
+}
+
+/* Tables */
+table, th, td {
+  font-family: var(--font-primary);
 }
 
 /* Accordion Styles */
@@ -33,7 +86,7 @@ main {
   width: 100%;
   text-align: left;
   padding: 0.75rem 1.25rem;
-  font-weight: 500;
+  font-weight: var(--font-weight-medium);
 }
 
 .accordion .btn-link:hover {
@@ -61,7 +114,7 @@ main {
 .filter-group h5 {
   margin-bottom: 15px;
   font-size: 1.1rem;
-  font-weight: 600;
+  font-weight: var(--font-weight-semibold);
   color: #495057;
 }
 
@@ -117,7 +170,7 @@ main {
 }
 
 .dataset-info h6 {
-  font-weight: 600;
+  font-weight: var(--font-weight-semibold);
   color: #495057;
   margin-top: 15px;
   margin-bottom: 10px;
@@ -146,7 +199,7 @@ main {
 .dataset-description table th {
   border: 1px solid #dee2e6;
   padding: 12px;
-  font-weight: 600;
+  font-weight: var(--font-weight-semibold);
   color: #495057;
 }
 
@@ -199,11 +252,11 @@ main {
 
 /* Button Styles */
 .btn-outline-primary {
-  font-weight: 500;
+  font-weight: var(--font-weight-medium);
 }
 
 .btn-secondary {
-  font-weight: 500;
+  font-weight: var(--font-weight-medium);
 }
 
 /* Alert Styles */
@@ -220,7 +273,7 @@ main {
 
 .card-title {
   color: #495057;
-  font-weight: 600;
+  font-weight: var(--font-weight-semibold);
 }
 
 /* Responsive Adjustments */
@@ -290,13 +343,13 @@ main {
 /* Page Header Styles */
 h1 {
   color: #333;
-  font-weight: 300;
+  font-weight: var(--font-weight-light);
   margin-bottom: 1.5rem;
 }
 
 h2 {
   color: #495057;
-  font-weight: 400;
+  font-weight: var(--font-weight-normal);
 }
 
 /* Navbar Brand Icon */
@@ -307,7 +360,7 @@ h2 {
 /* Active Nav Link */
 .navbar-nav .nav-item.active .nav-link {
   color: #158CBA !important;
-  font-weight: 500;
+  font-weight: var(--font-weight-medium);
 }
 
 /* Footer Styles */
