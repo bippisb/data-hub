@@ -362,9 +362,11 @@ table, th, td {
 
 /* ================================
    ACCORDION / DATASET ITEMS
+   Bootstrap 4 Compatible Fix
    ================================ */
 
-.accordion-item {
+/* Card/Accordion Item Container */
+.card.accordion-item {
   border: 1px solid var(--border-color);
   border-radius: var(--radius-lg) !important;
   margin-bottom: var(--spacing-md);
@@ -373,123 +375,191 @@ table, th, td {
   background-color: var(--background-lighter);
 }
 
-.accordion-item:hover {
+.card.accordion-item:hover {
   box-shadow: 0 4px 12px rgba(0, 0, 0, 0.08);
   border-color: var(--primary-color);
 }
 
-/* Make entire accordion header clickable */
-.accordion-header {
-  margin-bottom: 0;
+/* Card Header - FULL WIDTH CLICKABLE */
+.card-header {
+  background-color: var(--background-lighter);
+  border-bottom: none;
+  padding: 0 !important;
+  margin: 0;
+  transition: all 0.2s ease;
 }
 
-.accordion-header button {
+/* Remove h2 margins to allow full-width button */
+.card-header h2 {
+  margin: 0 !important;
+  padding: 0 !important;
+  width: 100%;
+}
+
+/* THE KEY FIX: Make button full width and properly styled */
+.card-header .btn,
+.card-header .btn-link {
+  /* Full width and layout */
+  width: 100% !important;
+  display: flex !important;
+  align-items: center;
+  justify-content: flex-start;
+  flex-wrap: wrap;
+  
+  /* Remove bootstrap button styling */
+  border: none !important;
+  border-radius: 0 !important;
+  background-color: transparent !important;
+  box-shadow: none !important;
+  
+  /* Spacing */
+  padding: var(--spacing-lg) !important;
+  margin: 0 !important;
+  
+  /* Text styling */
+  text-align: left !important;
+  text-decoration: none !important;
+  white-space: normal !important;
+  
+  /* Colors and fonts */
+  color: var(--text-primary) !important;
+  font-weight: var(--font-weight-semibold);
+  
+  /* Interaction */
+  cursor: pointer;
+  transition: all 0.2s ease;
   position: relative;
 }
 
-/* Ensure accordion button spans full width */
-.accordion-item .accordion-button {
-  border: none;
-  border-radius: 0;
+/* Button hover state */
+.card-header .btn:hover,
+.card-header .btn-link:hover {
+  background-color: var(--background-light) !important;
+  color: var(--text-primary) !important;
+  text-decoration: none !important;
 }
 
-.accordion-item:first-of-type .accordion-button {
-  border-top-left-radius: var(--radius-lg);
-  border-top-right-radius: var(--radius-lg);
+/* Button focus state */
+.card-header .btn:focus,
+.card-header .btn-link:focus {
+  background-color: var(--background-light) !important;
+  color: var(--text-primary) !important;
+  box-shadow: none !important;
+  outline: none !important;
+  text-decoration: none !important;
+}
+
+/* Button expanded state (when accordion is open) */
+.card-header .btn:not(.collapsed),
+.card-header .btn-link:not(.collapsed) {
+  background-color: var(--background-light) !important;
+  color: var(--primary-color) !important;
+}
+
+.card-header .btn:not(.collapsed) .dataset-title,
+.card-header .btn-link:not(.collapsed) .dataset-title {
+  color: var(--primary-color) !important;
+}
+
+/* Add arrow/caret indicator */
+.card-header .btn::after,
+.card-header .btn-link::after {
+  content: '\f078';
+  font-family: 'Font Awesome 5 Free', 'Font Awesome 6 Free', FontAwesome, 'Font Awesome 5 Brands';
+  font-weight: 900;
+  margin-left: auto;
+  padding-left: var(--spacing-md);
+  transition: transform 0.2s ease;
+  flex-shrink: 0;
+}
+
+.card-header .btn:not(.collapsed)::after,
+.card-header .btn-link:not(.collapsed)::after {
+  transform: rotate(180deg);
+}
+
+/* Dataset title styling */
+.card-header .dataset-title {
+  font-weight: var(--font-weight-semibold);
+  color: var(--text-primary);
+  margin-right: var(--spacing-sm);
+  flex-shrink: 1;
+}
+
+/* Dataset icon */
+.card-header .dataset-icon {
+  margin-right: var(--spacing-sm);
+  flex-shrink: 0;
+}
+
+/* Text muted elements in header */
+.card-header .text-muted {
+  color: var(--text-secondary) !important;
+  font-size: 0.9rem;
+}
+
+/* Card body - condensed spacing */
+.card-body {
+  padding: var(--spacing-md) var(--spacing-lg);
+  background-color: var(--background-lighter);
+}
+
+/* Specific styling for dataset-info */
+.card-body.dataset-info {
+  padding: var(--spacing-md) var(--spacing-lg);
+}
+
+/* Reduce spacing for content inside accordion body */
+.card-body p {
+  margin-bottom: var(--spacing-sm);
+}
+
+.card-body p:last-child {
+  margin-bottom: 0;
+}
+
+.card-body h1,
+.card-body h2,
+.card-body h3,
+.card-body h4,
+.card-body h5,
+.card-body h6 {
+  margin-top: var(--spacing-sm);
+  margin-bottom: var(--spacing-sm);
+}
+
+.card-body h1:first-child,
+.card-body h2:first-child,
+.card-body h3:first-child,
+.card-body h4:first-child,
+.card-body h5:first-child,
+.card-body h6:first-child {
+  margin-top: 0;
+}
+
+.card-body ul,
+.card-body ol {
+  margin-bottom: var(--spacing-sm);
+  padding-left: var(--spacing-lg);
+}
+
+.card-body li {
+  margin-bottom: var(--spacing-xs);
 }
 
 /* Condensed spacing for buttons and badges inside accordion */
-.accordion-body .btn {
+.card-body .btn {
   padding: var(--spacing-xs) var(--spacing-md);
   font-size: 0.9rem;
   margin-right: var(--spacing-xs);
   margin-bottom: var(--spacing-xs);
 }
 
-.accordion-body .badge {
+.card-body .badge {
   margin-right: var(--spacing-xs);
   margin-bottom: var(--spacing-xs);
   padding: 0.25rem 0.5rem;
   font-size: 0.8rem;
-}
-
-.accordion-button {
-  font-weight: var(--font-weight-semibold);
-  color: var(--text-primary);
-  background-color: var(--background-lighter);
-  padding: var(--spacing-lg);
-  transition: all 0.2s ease;
-  width: 100%;
-  text-align: left;
-  cursor: pointer;
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
-}
-
-.accordion-button:not(.collapsed) {
-  background-color: var(--background-light);
-  color: var(--primary-color);
-  box-shadow: none;
-}
-
-.accordion-button:focus {
-  box-shadow: none;
-  border-color: var(--primary-color);
-}
-
-.accordion-button::after {
-  filter: none;
-  flex-shrink: 0;
-  margin-left: auto;
-}
-
-.accordion-button:not(.collapsed)::after {
-  filter: brightness(0) saturate(100%) invert(14%) sepia(85%) saturate(3074%) hue-rotate(230deg) brightness(93%) contrast(94%);
-}
-
-/* Condensed accordion body spacing */
-.accordion-body {
-  padding: var(--spacing-md) var(--spacing-lg);
-  background-color: var(--background-lighter);
-}
-
-/* Reduce spacing for content inside accordion */
-.accordion-body p {
-  margin-bottom: var(--spacing-sm);
-}
-
-.accordion-body p:last-child {
-  margin-bottom: 0;
-}
-
-.accordion-body h1,
-.accordion-body h2,
-.accordion-body h3,
-.accordion-body h4,
-.accordion-body h5,
-.accordion-body h6 {
-  margin-top: var(--spacing-sm);
-  margin-bottom: var(--spacing-sm);
-}
-
-.accordion-body h1:first-child,
-.accordion-body h2:first-child,
-.accordion-body h3:first-child,
-.accordion-body h4:first-child,
-.accordion-body h5:first-child,
-.accordion-body h6:first-child {
-  margin-top: 0;
-}
-
-.accordion-body ul,
-.accordion-body ol {
-  margin-bottom: var(--spacing-sm);
-  padding-left: var(--spacing-lg);
-}
-
-.accordion-body li {
-  margin-bottom: var(--spacing-xs);
 }
 
 /* Dataset Title */
@@ -504,7 +574,6 @@ table, th, td {
   background-color: var(--background-light);
   border-left: 4px solid var(--primary-color);
   padding: var(--spacing-md);
-  border-radius: var(--radius-md);
   margin-bottom: var(--spacing-md);
 }
 
@@ -538,6 +607,9 @@ table, th, td {
 .dataset-description p:last-child {
   margin-bottom: 0;
 }
+
+
+
 
 /* Dataset Tags/Badges */
 .badge {
