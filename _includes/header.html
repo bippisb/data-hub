@@ -1,29 +1,29 @@
 <nav class="navbar navbar-expand-lg navbar-light bg-light">
   <div class="container">
     <a class="navbar-brand" href="{{ '/' | relative_url }}">
-      <img src="{{ '/assets/images/data-hub-logo.svg' | relative_url }}" alt="Data Hub Logo" class="logo mr-2" width="48" height="48">
-      <span style="font-weight: 500;">{{ site.title }}</span>
+      <img src="{{ '/assets/images/datahub_logo.png' | relative_url }}" alt="Data Hub Logo" class="logo me-2" height="56">
+      <!-- <span style="font-weight: 500;">{{ site.title }}</span> -->
     </a>
     <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
       <span class="navbar-toggler-icon"></span>
     </button>
     <div class="collapse navbar-collapse" id="navbarNav">
-      <ul class="navbar-nav ml-auto">
+      <ul class="navbar-nav ms-auto">
         <li class="nav-item {% if page.url == '/' %}active{% endif %}">
           <a class="nav-link" href="{{ '/' | relative_url }}">
-            <i class="fas fa-home mr-1"></i>Home
+            <i class="bi bi-house me-1"></i>Home
             {% if page.url == '/' %}<span class="sr-only">(current)</span>{% endif %}
           </a>
         </li>
         <li class="nav-item {% if page.url == '/about.html' %}active{% endif %}">
           <a class="nav-link" href="{{ '/about.html' | relative_url }}">
-            <i class="fas fa-info-circle mr-1"></i>About
+            <i class="bi bi-info-circle me-1"></i>About
             {% if page.url == '/about.html' %}<span class="sr-only">(current)</span>{% endif %}
           </a>
         </li>
         <li class="nav-item {% if page.url == '/contact.html' %}active{% endif %}">
           <a class="nav-link" href="{{ '/contact.html' | relative_url }}">
-            <i class="fas fa-envelope mr-1"></i>Contact
+            <i class="bi bi-envelope me-1"></i>Contact
             {% if page.url == '/contact.html' %}<span class="sr-only">(current)</span>{% endif %}
           </a>
         </li>

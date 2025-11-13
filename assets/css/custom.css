@@ -36,6 +36,7 @@
   --font-weight-medium: 500;
   --font-weight-semibold: 600;
   --font-weight-bold: 700;
+  --font-weight-heavy: 900;
   
   /* Spacing */
   --spacing-xs: 0.25rem;
@@ -127,7 +128,7 @@ table, th, td {
 .navbar {
   background-color: var(--background-lighter) !important;
   box-shadow: 0 2px 4px rgba(0, 0, 0, 0.08);
-  padding: var(--spacing-md) 0;
+  /* padding: var(--spacing-md) 0; */
 }
 
 .navbar-brand {
@@ -285,7 +286,7 @@ table, th, td {
 .filter-checkbox {
   display: flex;
   align-items: center;
-  padding: var(--spacing-sm) 0;
+  padding: var(--spacing-xs) 0;
   cursor: pointer;
   transition: all 0.2s ease;
 }
@@ -464,9 +465,9 @@ table, th, td {
 /* Add arrow/caret indicator */
 .card-header .btn::after,
 .card-header .btn-link::after {
-  content: '\f078';
-  font-family: 'Font Awesome 5 Free', 'Font Awesome 6 Free', FontAwesome, 'Font Awesome 5 Brands';
-  font-weight: 900;
+  content: '\f282';
+  font-family: 'bootstrap-icons';
+  font-weight: var(--font-weight-heavy);
   margin-left: auto;
   padding-left: var(--spacing-md);
   transition: transform 0.2s ease;
@@ -601,7 +602,7 @@ table, th, td {
 }
 
 .dataset-description p {
-  margin-bottom: var(--spacing-sm);
+  margin-bottom: var(--spacing-md);
 }
 
 .dataset-description p:last-child {

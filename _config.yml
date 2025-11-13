@@ -1,5 +1,5 @@
 # Site settings
-title: BIPP Data Hub
+title: Data Hub
 description: A comprehensive collection of high-value datasets for research purposes
 baseurl: "/"
 url: "https://bippisb.github.io"
@@ -26,6 +26,6 @@ exclude:
 maintainer:
   name: Gursharan Singh Dhanjal
   team: Data Hub Team
-  title: Principal Data Scientist
-  organization: Bharti Institute of Public Policy, ISB
+  title: Chief Data Scientist
+  organization: Powered By - Bharti Institute of Public Policy, ISB
   email: gursharan_singh@isb.edu
