@@ -83,16 +83,34 @@ title: Home
                 <p>{{ dataset.source | default: "Not specified" }}</p>
               </div>
               <div class="col-md-6">
-                <h6><i class="bi bi-tags me-1"></i>Sectors:</h6>
-                <p>
-                  {% if dataset.sectors and dataset.sectors.size > 0 %}
-                    {% for sector in dataset.sectors %}
-                      <span class="badge badge-primary">{{ sector }}</span>
-                    {% endfor %}
-                  {% else %}
-                    <span class="text-muted">Not specified</span>
-                  {% endif %}
-                </p>
+                <div class="row">
+                  <div class="col-md-6">
+                    <h6><i class="bi bi-tags me-1"></i>Sectors:</h6>
+                    <p>
+                      {% if dataset.sectors and dataset.sectors.size > 0 %}
+                        {% for sector in dataset.sectors %}
+                          <span class="badge badge-primary">{{ sector }}</span>
+                        {% endfor %}
+                      {% else %}
+                        <span class="text-muted">Not specified</span>
+                      {% endif %}
+                    </p>
+                  </div>
+                  <div class="col-md-6">
+                    <h6><i class="bi bi-tags me-1"></i></h6>
+                    <p>
+                      <!-- <a href="https://forms.office.com/Pages/ResponsePage.aspx?id=Q-TapKs4SkCzMZ0dM3_PN270gzHaN65Jq41AJQWicCVUMEZFSEZHQUtYUFNBODRCREEwMUNHWEg5Uy4u"  -->
+                      <a href="https://forms.cloud.microsoft/Pages/ResponsePage.aspx?id=Q-TapKs4SkCzMZ0dM3_PN270gzHaN65Jq41AJQWicCVUNkVKRlA0MlNYSDI0NEZTTjQwR0M2WVJGWS4u&r816a926783c7446e89d49f2cd88a6a80={{ dataset.name }} | Source: {{ dataset.source }}"
+                        target="_blank" 
+                        rel="noopener noreferrer" 
+                        class="btn btn-primary btn-xs" style="padding:0px 4px !important">
+                        <i class="bi bi-external-link-alt me-1"></i>
+                        Request this dataset
+                      </a>
+                       
+                    </p>
+                  </div>
+                </div>
               </div>
             </div>
             
