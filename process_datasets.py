@@ -137,7 +137,7 @@ def save_filters(sectors, granularities, filename='_data/filters.json'):
 def main():
     """Main function"""
     print("=" * 50)
-    print("High-Value Datasets Processor")
+    print("High-Resolution Datasets Processor")
     print("=" * 50)
     
     # Fetch data from API

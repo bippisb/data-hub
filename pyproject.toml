@@ -1,7 +1,7 @@
 [tool.poetry]
 name = "bipp-data-hub"
 version = "0.1.0"
-description = "repository to continuously update the high value datasets in the Data Hub"
+description = "repository to continuously update the high resolution datasets in the Data Hub"
 authors = ["gursharan-info <gursharan.info@gmail.com>"]
 readme = "README.md"
 

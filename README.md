@@ -1,6 +1,6 @@
-# High-Value Datasets Portal
+# High-Resolution Datasets Portal
 
-A Jekyll-based website for showcasing high-value datasets curated by the Bharti Institute of Public Policy at ISB.
+A Jekyll-based website for showcasing high-resolution datasets curated by the Bharti Institute of Public Policy at ISB.
 
 ## Setup Instructions
 
